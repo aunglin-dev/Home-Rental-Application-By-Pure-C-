@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{630E73BF-EFFF-4EC8-B3D2-C85C22A8586B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Customer_N_ProductRegisteration</RootNamespace>
+    <AssemblyName>Customer_N_ProductRegisteration</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminControlPanle\AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminControlPanle\AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControlPanle\ControlMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminControlPanle\ControlMainForm.Designer.cs">
+      <DependentUpon>ControlMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginRegisteUI\AdminView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginRegisteUI\AdminView.Designer.cs">
+      <DependentUpon>AdminView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginRegisteUI\PasswordPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginRegisteUI\PasswordPanel.Designer.cs">
+      <DependentUpon>PasswordPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainformUL\ShopCart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainformUL\ShopCart.Designer.cs">
+      <DependentUpon>ShopCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainformUL\SpecificHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainformUL\SpecificHistory.Designer.cs">
+      <DependentUpon>SpecificHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainformUL\UnitItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainformUL\UnitItem.Designer.cs">
+      <DependentUpon>UnitItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainformUL\Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainformUL\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainformUL\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainformUL\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainformUL\Proudcts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainformUL\Proudcts.Designer.cs">
+      <DependentUpon>Proudcts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainformUL\UserPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainformUL\UserPanel.Designer.cs">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterVariableStore.cs" />
+    <Compile Include="Rental.cs">
+      <DependentUpon>Rental.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rental.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rental.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginRegisteUI\UserView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginRegisteUI\UserView.Designer.cs">
+      <DependentUpon>UserView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginRegisteUI\WelcomeFom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginRegisteUI\WelcomeFom.Designer.cs">
+      <DependentUpon>WelcomeFom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitItemDataStore.cs" />
+    <EmbeddedResource Include="AdminControlPanle\AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminControlPanle\ControlMainForm.resx">
+      <DependentUpon>ControlMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginRegisteUI\AdminView.resx">
+      <DependentUpon>AdminView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginRegisteUI\PasswordPanel.resx">
+      <DependentUpon>PasswordPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainformUL\ShopCart.resx">
+      <DependentUpon>ShopCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainformUL\SpecificHistory.resx">
+      <DependentUpon>SpecificHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainformUL\UnitItem.resx">
+      <DependentUpon>UnitItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainformUL\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainformUL\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainformUL\Proudcts.resx">
+      <DependentUpon>Proudcts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainformUL\UserPanel.resx">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="LoginRegisteUI\UserView.resx">
+      <DependentUpon>UserView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginRegisteUI\WelcomeFom.resx">
+      <DependentUpon>WelcomeFom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Rental.xsc">
+      <DependentUpon>Rental.xsd</DependentUpon>
+    </None>
+    <None Include="Rental.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Rental.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Rental.xss">
+      <DependentUpon>Rental.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IMAGE\X.jpg" />
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
